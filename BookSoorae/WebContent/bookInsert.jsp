@@ -9,8 +9,4 @@
 <b><%=author%></b>
 <b><%=publisher%></b>
 <%--주석처리하고 pull--%>
-<%--test2--%>
-<%--test3--%>
-<%--test4--%>
-<%--test5--%>
-<%--test6--%>
+
