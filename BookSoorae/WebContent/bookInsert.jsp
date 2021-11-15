@@ -8,3 +8,4 @@
 <b><%=bookName%></b>
 <b><%=author%></b>
 <b><%=publisher%></b>
+<%--주석처리하고 pull--%>
