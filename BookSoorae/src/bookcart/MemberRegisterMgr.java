@@ -86,21 +86,8 @@ public class MemberRegisterMgr {
  	   	boolean rs;
  	   	try {
  	   		conn = pool.getConnection();
- 	   		String strQuery = "insert into member(user_id,pw,name,email,area1,area2,phone) values ('"
- 	   		+user_id
- 	   		+"','"
- 	   		+pw
- 	   		+"','"
- 	   		+name
- 	   		+"','"
- 	   		+email
- 	   		+"','"
- 	   		+area1
- 	   		+"','"
- 	   		+area2
- 	   		+"','"
- 	   		+phone
- 	   		+"')";
+ 	   		String strQuery = "insert into member(user_id,pw,name,email,area1,area2,phone) values ('"+user_id+"','"+pw+"','"+name+"','"+email+"','"+area1+"','"+area2+"','"
+ 	   		+phone+"')";
  	   		stmt = conn.createStatement();
  	   		rs = stmt.execute(strQuery);
  	   		}
@@ -110,5 +97,33 @@ public class MemberRegisterMgr {
 	   finally {
 		   pool.freeConnection(conn);
 	   }
+    }
+    
+    public String login(String user_id, String pw) {
+    	Connection conn = null;
+ 	   	Statement stmt = null;
+ 	   	ResultSet rs = null;
+ 	   	String name=null;
+ 	   try {
+ 		   conn = pool.getConnection();
+ 		   String strQuery = "select * from member where user_id='"+user_id+"' and pw='"+pw+"'";
+ 		   stmt = conn.createStatement();
+ 		   rs = stmt.executeQuery(strQuery);
+ 		   while(rs.next()) {
+ 			   name=rs.getString("name");
+ 		   }
+ 		 
+ 	   }
+ 	   catch (Exception ex) {
+          System.out.println("Exception" + ex);
+       } 
+ 	   finally {
+	      pool.freeConnection(conn);
+       }
+ 	  if(name!=null) {
+		   return name;
+	   }
+	   else
+		   return "error";
     }
 }

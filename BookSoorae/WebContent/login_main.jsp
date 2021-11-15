@@ -1,3 +1,13 @@
+<%@ page contentType="text/html; charset=utf-8" %>
+<%
+ 		String id = (String)session.getAttribute("idKey");  
+ 		if(id!=null){
+%>
+  <script>
+   alert("로그인 되었습니다");
+   location.href = "login_proc.jsp";
+  </script>
+<% } %>
 <!DOCTYPE html>
 
 <html lang="ko">
@@ -20,7 +30,7 @@
 
 <h1>로그인</h1>
 
-<form method=post action="login.jsp">
+<form method=post action="login_proc.jsp">
 
 <label for="loginid" class="labelid">아이디</label>
 
