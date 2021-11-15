@@ -5,7 +5,7 @@
 %>
   <script>
    alert("로그인 되었습니다");
-   location.href = "login_proc.jsp";
+   location.href = "login_ok.jsp";
   </script>
 <% } %>
 <!DOCTYPE html>
