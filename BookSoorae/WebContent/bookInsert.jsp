@@ -4,7 +4,6 @@
 	String bookName = request.getParameter("bookName");
 	String author = request.getParameter("author");
 	String publisher = request.getParameter("publisher");
-	//dksssd
 %>
 <b><%=bookName%></b>
 <b><%=author%></b>
