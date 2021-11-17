@@ -10,4 +10,4 @@
 <b><%=publisher%></b>
 <%--주석처리하고 pull--%>
 <%--test3d --%>
-<%--ddd2sddxdf1dddd3d2wntjdrcj34--%>
+<%--ddd2dsddxdf1dddd3d2wntjdrcj34--%>
