@@ -1,7 +1,7 @@
-<%@ page contentType="text/html; charset=EUC-KR" %>
+<%@ page contentType="text/html; charset=utf-8" %>
 <html>
 <head>
-<title>Ã¥ µî·Ï</title>
+<title>ì±… ë“±ë¡</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -9,7 +9,7 @@
 <br/><br/>
 <table width="600" cellpadding="3">
 	<tr>
-		<td bgcolor="#D0D0D0" height="25" align="center">Ã¥ µî·Ï</td>
+		<td bgcolor="#D0D0D0" height="25" align="center">ì±… ë“±ë¡</td>
 	</tr>
 </table>
 <br/>
@@ -19,28 +19,28 @@
 		<td align=center>
 		<table align="center">
 			<tr>
-				<td>Ã¥ Á¦¸ñ</td>
+				<td>ì±… ì œëª©</td>
 				<td><input name="bookname" size="40" maxlength="30"></td>
 			</tr>
 			<tr>
-				<td>ÀúÀÚ</td>
+				<td>ì €ìž</td>
 				<td><input name="author" size="40" maxlength="30"></td>
 			</tr>
 			<tr>
-				<td>ÃâÆÇ»ç</td>
+				<td>ì¶œíŒì‚¬</td>
 				<td><input name="publisher" size="40" maxlength="30" ></td>
 			</tr>
 			<tr>
-				<td>º¸Áõ±Ý</td>
+				<td>ë³´ì¦ê¸ˆ</td>
 				<td><input name="deposit" size="40" maxlength="30" ></td>
 			</tr>
 			<tr>
-				<td>³»¿ë</td>
+				<td>ë‚´ìš©</td>
 				<td><textarea name="content" rows="10" cols="50" maxlength="1000" style="height:200px;"></textarea></td>
 			</tr>
 			<tr>
 			 <tr>
-     			<td>»çÁø Ã·ºÎ</td> 
+     			<td>ì‚¬ì§„ ì²¨ë¶€</td> 
      			<td><input type="file" name="filename" size="50" maxlength="50"></td>
     		</tr>
 			<tr>
@@ -48,10 +48,10 @@
 			</tr>
 			<tr>
 				<td colspan="2">
-					 <input type="submit" value="µî·Ï">
+					 <input type="submit" value="ë“±ë¡">
 				</td>
 				<td colspan="2">
-					 <input type="button" value="Ã¥ ¸ñ·Ï" onClick="javascript:location.href='bookList.jsp'">
+					 <input type="button" value="ì±… ëª©ë¡" onClick="javascript:location.href='bookList.jsp'">
 				</td>
 			</tr>
 		</table>
