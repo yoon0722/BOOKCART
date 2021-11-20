@@ -1,9 +1,9 @@
-<%@page contentType="text/html; charset=EUC-KR" %>
+<%@page contentType="text/html; charset=utf-8" %>
 <%@page import="bookcart.BoardBean"%>
 <%@page import="java.util.Vector"%>
 <jsp:useBean id="bMgr" class="bookcart.BoardMgr" />
 <%	
-	  request.setCharacterEncoding("EUC-KR");
+	  request.setCharacterEncoding("utf-8");
 	  
       int totalRecord=0; //전체레코드수
 	  int numPerPage=10; // 페이지당 레코드 수 
