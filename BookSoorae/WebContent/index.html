@@ -1,19 +1,18 @@
 <!DOCTYPE html>
+<html>
 <head>
- 	<meta charset="UTF-8">
-    <meta charset="euc-kr">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up Page</title>
+    <meta charset="UTF-8">
+    <title>BookSooRae</title>
+ 
     <!-- 외부 스타일시트 적용 -->
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./signup.css">
 </head>
 <body>
-<header>
+    <header>
         <h1>
             <img src="./images/logo.png" alt="shop" width="50" height="50">
             <a href="index.html">BookSooRae</a>
+			
         </h1>
        
             <ul>
@@ -38,41 +37,7 @@
         
     </aside>
     <section id="main">
-     <div class="signup">
-    <h1>회원가입</h1>
-    <form method="post" action="sign_up.jsp">
-    <div class="sign-up-p">
-        <label for="user-name" class="label-username">이름</label>
-        <input name="name"><br/>
-
-        <label for="loginid" class="labelid">아이디</label>
-        <input name="user_id"><br/>
-
-        <label for="loginpw" class="labelpw">비밀번호</label>
-        <input type="password" name="pw"><br/>
-
-        <label for="pw-check" class="labelpw">비밀번호 확인</label>
-        <input type="password" name="pw"><br/>
-        
-        <label for="email" class="labelemail">이메일</label>
-        <input type="email" name="email"><br/>
-
-        <label for="phone-number" class="label-phone-num">휴대폰번호</label>
-        <input type="number" name="phone"><br/>
-
-        <label for="address-1" class="label-address1">거주지 시</label>
-        <input type="text" name="area1"><br/>
-
-        <label for="address-2" class="label-address2">거주지 동</label>
-        <input type="text" name="area2"><br/>
-    </div>
-    <div>
-        <button type="submit">회원가입</button>
-        <button type="button" onclick="document.location.href='index.html'">메인페이지</button>  
-    </div>
-    </form>
-     </div>
-        
+        <h1>메인페이지</h1>
     </section>
     <aside id="right">
         
@@ -106,5 +71,6 @@
         </div>
       
     </footer>
+    
 </body>
 </html>
