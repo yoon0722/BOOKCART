@@ -1,5 +1,15 @@
 <%@ page contentType="text/html; charset=EUC-KR" %>
  <%@ page import="bookcart.ReviewBoardBean"%>
+ <%
+ 		String id = (String)session.getAttribute("idKey");  
+ 		if(id!=null){
+ 		} 
+		else{%>
+<script>
+alert("로그인이 필요한 서비스입니다");
+location.href = "login_main.jsp";
+</script>
+		<%} %>
 <% 
 	  int num = Integer.parseInt(request.getParameter("num"));
 	  String nowPage = request.getParameter("nowPage");
@@ -45,7 +55,7 @@
 	</tr>
 	<tr>
 		<td>아이디</td>
-		<td><input name="user_id" size="50" value="<%=name%>" maxlength="30"></td>
+		<td><%=name%></td>
 	</tr>
 	<tr>
      <td>작 가</td>

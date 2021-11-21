@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @WebServlet("/boardReply")
 public class ReviewBoardReplyServlet extends HttpServlet {
@@ -14,9 +15,10 @@ public class ReviewBoardReplyServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		request.setCharacterEncoding("EUC-KR");
+		HttpSession session = request.getSession();
 		ReviewBoardMgr bMgr = new ReviewBoardMgr();
 		ReviewBoardBean reBean = new ReviewBoardBean();
-		reBean.setUser_id(request.getParameter("user_id"));
+		reBean.setUser_id(session.getAttribute("idKey").toString());
 		reBean.setSubject(request.getParameter("subject"));
 		reBean.setContent(request.getParameter("content"));
 		reBean.setWriter(" ");

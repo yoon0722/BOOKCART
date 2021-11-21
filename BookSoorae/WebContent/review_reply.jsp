@@ -1,4 +1,14 @@
 <%@ page contentType="text/html; charset=EUC-KR" %>
+ <%
+ 		String id = (String)session.getAttribute("idKey");  
+ 		if(id!=null){
+ 		} 
+		else{%>
+<script>
+alert("로그인이 필요한 서비스입니다");
+location.href = "login_main.jsp";
+</script>
+	<%} %>
 <jsp:useBean id="bean" class="bookcart.ReviewBoardBean" scope="session"/>
 <%
 	  String nowPage = request.getParameter("nowPage");
@@ -30,7 +40,7 @@
     </tr>
     <tr>
 			<td>아이디</td>
-			<td><input name="user_id" size="50" maxlength="30"></td>
+			<td><%=id%></td>
 	</tr>
 	<tr>
      <td>내 용</td>

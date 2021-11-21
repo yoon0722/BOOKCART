@@ -28,7 +28,7 @@ public class ReviewBoardUpdateServlet extends HttpServlet {
 		
 		ReviewBoardBean upBean = new ReviewBoardBean();
 		upBean.setRv_id(Integer.parseInt(request.getParameter("num")));
-		upBean.setUser_id(request.getParameter("user_id"));
+		upBean.setUser_id(session.getAttribute("idKey").toString());
 		upBean.setSubject(request.getParameter("subject"));
 		upBean.setContent(request.getParameter("content"));
 		upBean.setPass(request.getParameter("pass"));

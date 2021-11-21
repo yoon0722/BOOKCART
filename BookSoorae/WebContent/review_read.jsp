@@ -49,10 +49,6 @@
     <td align="center" bgcolor="#DDDDDD"> 제 목</td>
     <td bgcolor="#FFFFE8" colspan="3"><%=subject%></td>
    </tr>
-   <tr> 
-    <td align="center" bgcolor="#DDDDDD"> 아이디</td>
-    <td bgcolor="#FFFFE8" colspan="3"><%=name%></td>
-   </tr>
     <tr> 
     <td align="center" bgcolor="#DDDDDD"> 작 가</td>
     <td bgcolor="#FFFFE8" colspan="3"><%=writer%></td>

@@ -103,7 +103,7 @@ public class ReviewBoardMgr {
 	}
 	
 	// 게시물 입력
-	public void insertBoard(HttpServletRequest req) {
+	public void insertBoard(HttpServletRequest req, String user_id) {
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -121,7 +121,7 @@ public class ReviewBoardMgr {
 			sql = "insert review(user_id,content,subject,ref,pos,depth,wr_date,pass,hit,publisher,writer)";
 			sql += "values(?, ?, ?, ?, 0, 0, now(), ?, 0,?,?)";
 			pstmt = con.prepareStatement(sql);
-			pstmt.setString(1,req.getParameter("user_id"));//!!!!!변경 필요
+			pstmt.setString(1,user_id);//!!!!!변경 필요
 			pstmt.setString(2, content);
 			pstmt.setString(3, req.getParameter("subject"));
 			pstmt.setInt(4, ref);

@@ -1,5 +1,14 @@
 <%@ page contentType="text/html; charset=EUC-KR" %>
-
+<%
+ 		String id = (String)session.getAttribute("idKey");  
+ 		if(id!=null){
+ 		} 
+		else{%>
+<script>
+alert("로그인이 필요한 서비스입니다");
+location.href = "login_main.jsp";
+</script>
+		<%} %>
 <html>
 <head>
 <title>JSP Board</title>
@@ -27,7 +36,7 @@
 			<tr>
 				<td>아이디</td>
 				<td>
-				<input name="user_id" size="50" maxlength="30"></td>
+				<%=id %></td>
 			</tr>
 			<tr>
 				<td>작 가</td>
@@ -47,7 +56,6 @@
 				<td>비밀 번호</td>
 				<td><input type="password" name="pass" size="15" maxlength="15"></td>
 			</tr>
-			<tr>
 			 <!-- 파일 지움  
  			<tr>
  				<td>내용타입</td>
