@@ -48,7 +48,7 @@
 <html>
 <head>
 <title>책 목록</title>
-<link href="style.css" rel="stylesheet" type="text/css">
+<link href="bookList.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
 	function list() {
 		document.listFrm.action = "bookList.jsp";
@@ -82,7 +82,24 @@
 </script>
 </head>
 <body>
-<div align="center">
+	<div class="top-line"></div>
+	<div class="header">
+		<div class="header-left">
+			<div class="book-icon"><i class="fas fa-book fa-2x"></i></div>
+			<h1>BookSoorae</h1>
+		</div>
+		
+		<div class="header-btns">
+			<button type="button" class="signup-button">Sign-up</button>
+			<button type="button" class="login-button">Login</button>
+		</div>
+	</div>
+	<div class="write-btn">
+		<button type="button">글 작성하러 가기
+			<i class="fas fa-pencil-alt"></i>
+		</button>
+	</div>
+	<div align="center">
 	<br/>
 	<h2>책 목록</h2>
 	<br/>
